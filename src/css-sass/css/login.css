@@ -82,9 +82,12 @@ p{
     }
 
 }
-#logo{
-    max-width: 300;
-    height: 250px;
+
+
+
+#logo-register{
+    width: auto;
+    height: 400px;
 }
 input{
     width: 200px;
