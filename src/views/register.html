@@ -7,39 +7,43 @@
     <link rel="stylesheet" href="../css-sass/css/login.css">
     <title>Login</title>
 </head>
-<body>
-    <img id="logo-register" src="../assets/flota.jpg" alt="logo-ParentNotify">
-    <form action="register.html" method="">
-        <label for="register-Name">Nombre</label>
-        <input placeholder="loremmm" type="text" name="register-Name" id="register-Name">
-        <label for="register-Lastname">Apellido</label>
-        <input placeholder="loremmm" type="text" name="register-Lastname" id="register-Lastname">
-        <label for="register-Password">Contraseña</label>
-        <input placeholder="loremmm" type="password" name="register-Password" id="register-Password">
-        <label for="register-Password">Confimar Contraseña</label>
-        <input placeholder="loremmm" type="password" name="register-Password" id="register-Password">
-        <label for="register-Grade">Grado Del Estudiante</label>
-        <select type="text" name="register-Grade" id="register-Grade">
-            <option value="1">Primero</option>
-            <option value="2">Segundo</option>
-            <option value="3">Tercero</option>
-            <option value="4">Cuarto</option>
-            <option value="5">Quinto</option>
-            <option value="6">Sexto</option>
-        </select>
-        <label for="register-Grade">Section</label>
-        <select type="text" name="Section" id="register-Section">
-            <option value="a">A</option>
-            <option value="b">B</option>
-            <option value="c">C</option>
-            <option value="d">D</option>
-            <option value="e">E</option>
-            <option value="f">F</option>
-
-        </select>
+<body id="body-register">
+    <main>
+        <section class="sections-registers" id="img-register-section"><img id="logo-register" src="../assets/flota.jpg" alt="logo-ParentNotify"></section>
+        <section class="sections-registers" id="form-register">
+            <form action="register.html" method="">
+                <label for="register-Name">Nombre</label>
+                <input placeholder="loremmm" type="text" name="register-Name" id="register-Name">
+                <label for="register-Lastname">Apellido</label>
+                <input placeholder="loremmm" type="text" name="register-Lastname" id="register-Lastname">
+                <label for="register-Password">Contraseña</label>
+                <input placeholder="loremmm" type="password" name="register-Password" id="register-Password">
+                <label for="register-Password">Confimar Contraseña</label>
+                <input placeholder="loremmm" type="password" name="register-Password" id="register-Password">
+                <label for="register-Grade">Grado Del Estudiante</label>
+                <select type="text" name="register-Grade" id="register-Grade">
+                    <option value="1">Primero</option>
+                    <option value="2">Segundo</option>
+                    <option value="3">Tercero</option>
+                    <option value="4">Cuarto</option>
+                    <option value="5">Quinto</option>
+                    <option value="6">Sexto</option>
+                </select>
+                <label for="register-Grade">Section</label>
+                <select type="text" name="Section" id="register-Section">
+                    <option value="a">A</option>
+                    <option value="b">B</option>
+                    <option value="c">C</option>
+                    <option value="d">D</option>
+                    <option value="e">E</option>
+                    <option value="f">F</option>
         
-        <button type="submit">Ver horario</button>
-    </form>
+                </select>
+            <button type="submit">Ver horario</button>
+        </form>
+    </section>
+    
+    </main>
     
 </body>
 </html>
