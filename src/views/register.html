@@ -9,19 +9,20 @@
 </head>
 <body id="body-register">
     <main>
-        <section class="sections-registers" id="img-register-section"><img id="logo-register" src="../assets/flota.jpg" alt="logo-ParentNotify"></section>
+        <h1><span>Parent</span> Notify</h1>
+        <section class="sections-registers" id="img-register-section"><img id="logo-register" src="../assets/libro.png" alt="logo-ParentNotify"></section>
         <section class="sections-registers" id="form-register">
-            <form action="register.html" method="">
-                <label for="register-Name">Nombre</label>
-                <input placeholder="loremmm" type="text" name="register-Name" id="register-Name">
-                <label for="register-Lastname">Apellido</label>
-                <input placeholder="loremmm" type="text" name="register-Lastname" id="register-Lastname">
-                <label for="register-Password">Contraseña</label>
-                <input placeholder="loremmm" type="password" name="register-Password" id="register-Password">
-                <label for="register-Password">Confimar Contraseña</label>
-                <input placeholder="loremmm" type="password" name="register-Password" id="register-Password">
-                <label for="register-Grade">Grado Del Estudiante</label>
-                <select type="text" name="register-Grade" id="register-Grade">
+            <form action="./apk.html">
+                <input placeholder="nombre" type="text" name="register-Name" id="register-Name" required>
+                <br>
+                <input placeholder="apellido" type="text" name="register-Lastname" id="register-Lastname">
+                <br>                
+                <input placeholder="contraseña" type="password" name="register-Password" id="register-Password"required>
+                <br>
+                <input placeholder="confirma tu contraseña" type="password" name="register-Password" id="register-Password"required>
+                <br>
+        
+                <select type="text" name="register-Grade" id="register-Grade"required>
                     <option value="1">Primero</option>
                     <option value="2">Segundo</option>
                     <option value="3">Tercero</option>
@@ -29,21 +30,22 @@
                     <option value="5">Quinto</option>
                     <option value="6">Sexto</option>
                 </select>
-                <label for="register-Grade">Section</label>
-                <select type="text" name="Section" id="register-Section">
+                
+                <select type="text" name="Section" id="register-Section" required>
                     <option value="a">A</option>
                     <option value="b">B</option>
                     <option value="c">C</option>
                     <option value="d">D</option>
                     <option value="e">E</option>
-                    <option value="f">F</option>
-        
                 </select>
-            <button type="submit">Ver horario</button>
+                <br><br>
+            <button class="boton" onclick="app_Enter_Register()">Ingresar</button>
         </form>
+        <br><br> 
     </section>
     
     </main>
-    
+    <script src="/src/js/modules/links.js"></script>
+    <script src="/src/js/modules/register-data.js"></script>
 </body>
 </html>

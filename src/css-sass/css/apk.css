@@ -1,0 +1,81 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --colorPrincipal: #ccd5ae;
+    --colorBorde: #e9edc9;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+}
+
+nav {
+    padding: 1.2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between
+}
+
+nav button i{
+     font-size: 2.5rem;
+     padding: 1rem;
+}
+
+nav button {
+    background-color: none;
+    border: none;
+    background-color: transparent;
+
+}
+
+main .titles {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 0 2rem 0;
+}
+
+main h2 {
+    opacity: 0.7;
+}
+
+.basicInfo div {
+    background-color: var(--colorPrincipal);
+    border: 1px solid var(--colorBorde);
+    border-radius: 1rem;
+    margin: 0 .5rem 0 .5rem;
+}
+
+.basicInfo .primeraSection {
+    display: flex;
+    flex-direction: row;
+}
+
+.basicInfo .resumenHoy {
+    height: 40vh;
+    width: 50vw;
+    padding: 10px;
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+
+
+.infoDeHoy {
+    text-align: center;
+}
+
+.basicInfo .entradaSalida {
+    height: 40vh;
+    width: 50vw;
+}
+
+.basicInfo .resumenSemanal{
+    height: 25vh;
+    margin: .5rem .5rem 0 .5rem;
+}
