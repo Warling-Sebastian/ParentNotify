@@ -1,11 +1,11 @@
 
+let nombre = localStorage.getItem('name')
+let apellido = localStorage.getItem('lastName')
+let password_apk = localStorage.getItem('password')
+let password_Capk = localStorage.getItem('password_C')
+let grado = localStorage.getItem('grade')
+let seccion = localStorage.getItem('section')
 
-    function app_Enter_Register() {
+document.getElementById('usuario').innerHTML = `${nombre}`;
 
-    const Name = document.getElementById("register-Name").value;
-
-    document.getElementById('usuario').innerHTML = Name;
-
-    window.location.href="/src/views/apk.html" 
-    }
     
