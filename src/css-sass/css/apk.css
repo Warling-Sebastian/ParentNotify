@@ -2,8 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
-    --colorPrincipal: #ccd5ae;
-    --colorBorde: #e9edc9;
+    --colorPrincipal: #adb5bd;
+    --colorBorde: #343a40;
+    --colorNegative: #e63946;
+    --colorPositive: #06d6a0;
 }
 
 * {
@@ -12,24 +14,74 @@
     box-sizing: border-box;
     font-family: 'Montserrat';
 }
-
 nav {
     padding: 1.2rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between
+    
 }
 
+nav label i{
+    font-size: 2.5rem;
+    padding: 1rem;
+}
+i{
+    font-size: 2rem;
+    padding: 1rem;
+}
 nav button i{
-     font-size: 2.5rem;
-     padding: 1rem;
+    font-size: 2.5rem;
+    padding: 1rem;
 }
-
 nav button {
     background-color: none;
     border: none;
     background-color: transparent;
 
+}
+#menu{
+    display: none;
+}
+#menu3{ position: relative; z-index: 2;}
+ul{
+    width: 90%;
+    box-shadow: 1px 1px 7px #333;
+    border-radius: 0 10px 10px 0;
+    position: fixed;
+    list-style: none;
+    top: 0;
+    left: 0;
+    margin-left: -1500px;
+    height: 100vh;
+    transition: 1s;
+    text-align: center;
+    z-index: 1;
+    background-color: #f0f0f0;
+}
+ul li a{
+    color:black;
+    text-decoration: none;
+    font-size: 30px;
+}
+#label_menu{
+    background:linear-gradient(#f77f00, #ffa84b);
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 0 15px 15px;
+}
+#menu_links{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    text-align: center;
+    height: 100%;
+}
+#config_menu{
+    bottom: 0;
 }
 
 main .titles {
@@ -38,44 +90,85 @@ main .titles {
     flex-direction: column;
     margin: 0 0 2rem 0;
 }
-
+#menu:checked ~ ul{
+margin-left: 0px;
+}
 main h2 {
     opacity: 0.7;
 }
 
-.basicInfo div {
-    background-color: var(--colorPrincipal);
-    border: 1px solid var(--colorBorde);
-    border-radius: 1rem;
-    margin: 0 .5rem 0 .5rem;
-}
-
-.basicInfo .primeraSection {
+.todayInfo {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
 }
 
-.basicInfo .resumenHoy {
-    height: 40vh;
-    width: 50vw;
-    padding: 10px;
+.todayResume, .todayHours {
+    width: 47vw;
+    margin: 6px;
+    background-color: var(--colorPrincipal);
+    border: 1px solid var(--colorBorde);
+    border-radius: 15px;
+    padding: 1em;
     text-align: center;
     font-weight: 700;
-    margin-bottom: 10px;
 }
 
+.weeklyResume {
+    margin: 6px;
+    background-color: var(--colorPrincipal);
+    border: 1px solid var(--colorBorde);
+    border-radius: 15px;
+    padding: 1em;
+    text-align: center;
+    font-weight: 550;
+}
 
+.separador, .separador div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    font-weight: 500
+}
 
-.infoDeHoy {
+.state {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1.9rem;
+    width: 1.9rem;
+    border: 3px solid black;
+    border-radius: 100%;
+    background-color: var(--colorNegative);
     text-align: center;
 }
 
-.basicInfo .entradaSalida {
-    height: 40vh;
-    width: 50vw;
+.hour {
+    font-weight: 600;
+    margin: 4px;
 }
 
-.basicInfo .resumenSemanal{
-    height: 25vh;
-    margin: .5rem .5rem 0 .5rem;
+.weekDays {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.weekDays div {
+    position: relative;
+    padding: 15px;
+}
+
+.weekDays p {
+    position: absolute;
+    bottom: 0px;
+    right: 16px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.weekDays .state {
+   
 }
