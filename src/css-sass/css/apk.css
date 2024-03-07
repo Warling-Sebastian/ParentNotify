@@ -27,7 +27,7 @@ nav label i{
     padding: 1rem;
 }
 i{
-    font-size: 2rem;
+    font-size: 1.5rem;
     padding: 1rem;
 }
 nav button i{
@@ -62,7 +62,14 @@ ul{
 ul li a{
     color:black;
     text-decoration: none;
-    font-size: 30px;
+    font-size: 25px;
+    margin: 0;
+    padding: 0;
+}
+#estructure{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 #label_menu{
     background:linear-gradient(#f77f00, #ffa84b);
@@ -74,14 +81,24 @@ ul li a{
     border-radius: 0 0 15px 15px;
 }
 #menu_links{
-    display: flex;
+    display: block;
     flex-wrap: wrap;
     justify-content: start;
     text-align: center;
-    height: 100%;
+    height: 70vh;
+    margin-top: 50px;
+}
+#menu_links li{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin: 0;
+    padding: 0;
 }
 #config_menu{
-    bottom: 0;
+    position: relative;
+    margin-bottom: 30px;
 }
 
 main .titles {
@@ -144,6 +161,10 @@ main h2 {
     text-align: center;
 }
 
+.state i {
+    font-size: 80%;
+}
+
 .hour {
     font-weight: 600;
     margin: 4px;
@@ -167,8 +188,4 @@ main h2 {
     right: 16px;
     font-size: 14px;
     text-align: center;
-}
-
-.weekDays .state {
-   
 }
